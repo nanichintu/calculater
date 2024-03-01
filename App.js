@@ -8,10 +8,7 @@ const App = () => {
     setCount(eval(count));
   };
 
-  const style = {
-    backgroundColor: "green",
-    color: "white",
-  };
+
   return (
     <React.Fragment>
       <center>
@@ -19,7 +16,7 @@ const App = () => {
         <br />
 
         <div className="grid">
-          <button onClick={handleResult} style={style}>
+          <button onClick={handleResult} style={style} style={{ backgroundColor: "green", color: "white" }}> 
             result
           </button>
           <button onClick={() => setCount(count + 1)}>1</button>
